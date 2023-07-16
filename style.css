@@ -1,0 +1,60 @@
+.set2{
+    gap:8px
+}
+.butt{
+    padding: 50px;
+    
+}
+.calculator{
+    width: 23%;
+    background-color:#292d36;
+    height: 80vh;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 70px;
+    
+    
+    
+    
+    
+}
+button{
+    width: 20%;
+    height: 8vh;
+    padding: 10px;
+    background-color:#292d36;
+    border: none;
+    border-color: #8c8c8e;
+    border-radius: 10px;
+    
+}
+
+.texthere{
+    width: 98%;
+    height: 20vh;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    
+    background-color:#22252d;
+}
+.set1 ,.set2 ,.set3,.set3,.set4,.set5{
+    
+   margin-bottom: 10px;
+}
+
+.Ac{
+    color: aqua;
+    font-size: 20px;
+    font-weight: 600;
+}
+.last{
+    color: rgb(242, 121, 77);
+    font-size: 20px;
+    font-weight: 600;
+}
+.nums{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
