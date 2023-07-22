@@ -5,48 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <p id="demo"></p>
 
    
         <div class="calculator">
-        <input type="text" class="texthere">
+        <input type="text" class="texthere" id="output">
         <div class="butt">
             <div class="set1">
-                <button class="Ac">AC</button>
-                <button class="Ac">+/-</button>
-                <button class="Ac">%</button>
-                <button class="last">/</button>
+                <button class="Ac" onclick="clearInput()">AC</button>
+                <button class="Ac" onclick="RemoveLast()" id="back"><i class="fa-solid fa-delete-left"></i></button>
+                <button class="Ac" onclick="display('%')" id="percentage"><i class="fa-solid fa-percent"></i></button>
+                <button class="last" onclick="display('/')" id="divide"><i class="fa-solid fa-divide"></i></button>
             </div>
             <div class="set2">
-                <button class="nums">7</button>
-                <button class="nums">8</button>
-                <button class="nums">9</button>
-                <button class="last">x</button>
+                <button class="nums" onclick="display(7)"id="seven">7</button>
+                <button class="nums" onclick="display(8)" id="eight">8</button>
+                <button class="nums" onclick="display(9)" id="nine">9</button>
+                <button class="last" onclick="display('*')"><i class="fa-solid fa-xmark"></i></button>
             </div>
             <div class="set3">
-                <button class="nums">4</button>
-                <button class="nums">5</button>
-                <button class="nums">6</button>
-                <button class="last">-</button>
+                <button class="nums"onclick="display(4)" id="four">4</button>
+                <button class="nums"onclick="display(5)"id="five">5</button>
+                <button class="nums"onclick="display(6)" id="six">6</button>
+                <button class="last"onclick="display('-')" id="minus"><i class="fa-solid fa-minus"></i></button>
             </div>
             <div class="set4">
-                <button class="nums">1</button>
-                <button class="nums">2</button>
-                <button class="nums">3</button>
-                <button class="last">+</button>
+                <button class="nums"onclick="display(1)" id="one">1</button>
+                <button class="nums" onclick="display(2)" id="two">2</button>
+                <button class="nums" onclick="display(3)" id="three">3</button>
+                <button class="last" onclick="display('+')" id="plus"><i class="fa-solid fa-plus"></i></button>
             </div>
             <div class="set5">
-                <button class="nums">#</button>
-                <button class="nums">0</button>
-                <button class="nums">.</button>
-                <button class="last">=</button>
+                <button class="nums" onclick="display('#')"  id="hash">#</button>
+                <button class="nums"onclick="display(0)" id="zero">0</button>
+                <button class="nums" onclick="display('.')" id="dot">.</button>
+                <button class="last"onclick="calculate()" id="equal">=</button>
             </div>
 
         </div>
     </div>
     
-    
+    <script src="./script.js"></script>
 </body>
 </html>
